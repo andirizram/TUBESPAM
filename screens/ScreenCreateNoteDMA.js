@@ -51,10 +51,7 @@ const ScreenCreateNoteDMA = () => {
       <TextInput
         placeholder="Insert Note Content"
         multiline
-        style={[
-          styles.clickToStart,
-          { placeholderTextColor: theme.placeholder },
-        ]}
+        style={[styles.clickToStart, { color: theme.color }]}
       />
       <RNKDatepicker
         placeholder={() => (
