@@ -17,13 +17,13 @@ Fitur :
 4. Change Background
 5. Push Notification
 
-Package yang diperlukan : 
-yarn add @react-navigation/native
-yarn add @ui-kitten/components
-yarn add @eva-design/eva
-yarn add @react-navigation/native-stack
-yarn add react-native-safe-area-context
-yarn add react-native-screens
-yarn add react-native-svg
-npx expo install react-native-svg
-yarn add react-native-event-listeners
+Package yang diperlukan : <br>
+yarn add @react-navigation/native<br>
+yarn add @ui-kitten/components<br>
+yarn add @eva-design/eva<br>
+yarn add @react-navigation/native-stack<br>
+yarn add react-native-safe-area-context<br>
+yarn add react-native-screens<br>
+yarn add react-native-svg<br>
+npx expo install react-native-svg<br>
+yarn add react-native-event-listeners<br>
