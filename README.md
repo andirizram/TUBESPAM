@@ -11,3 +11,8 @@ Deskripsi Singkat Daylist
 sehingga meminimalisir akan melupakan kegiatan yang ingin atau akan melakukan kegiatan yang penting </br>
 
 Fitur :
+1. Dark/light mode
+2. Create/Delate/Edit note
+3. Search Note
+4. Change Background
+5. Push Notification
