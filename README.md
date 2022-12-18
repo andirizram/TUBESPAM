@@ -27,3 +27,4 @@ yarn add react-native-screens<br>
 yarn add react-native-svg<br>
 npx expo install react-native-svg<br>
 yarn add react-native-event-listeners<br>
+npx expo install expo-image-picker
