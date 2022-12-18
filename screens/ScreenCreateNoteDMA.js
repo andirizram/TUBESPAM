@@ -2,12 +2,14 @@ import * as React from "react";
 import { useState, useContext } from "react";
 import {
   Pressable,
+  Button,
   StyleSheet,
   View,
   Image,
   TouchableOpacity,
   TextInput,
   Text,
+  PixelRatio,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import {
@@ -17,11 +19,28 @@ import {
 } from "@ui-kitten/components";
 import themeContext from "../ThemeContext";
 import theme from "../Theme";
+import * as ImagePicker from 'expo-image-picker';
 
 const ScreenCreateNoteDMA = () => {
   const theme = useContext(themeContext);
   const navigation = useNavigation();
   const [datePicker, setDatePicker] = useState(undefined);
+  const [image, setImage] = useState(null);
+  
+  const pickImage = async () => {
+    let result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.All,
+      allowsEditing: true,
+      aspect: [1, 1],
+      quality: 1,
+    });
+  
+    console.log(result);
+  
+    if (!result.canceled) {
+      setImage(result.assets[0].uri);
+    }
+  };
 
   return (
     <View
@@ -62,6 +81,10 @@ const ScreenCreateNoteDMA = () => {
         onSelect={setDatePicker}
         controlStyle={styles.datePickerValue}
       />
+      <View style={styles.clickToStart2}>
+        <Button title="Pick an image from camera roll" onPress={pickImage}/>
+      </View>
+      {image && <Image source={{ uri: image }} style={{ width: 200, height: 200, marginTop: 500, marginLeft: 20 }} />}
     </View>
   );
 };
@@ -121,6 +144,20 @@ const styles = StyleSheet.create({
   clickToStart: {
     position: "absolute",
     top: 190,
+    left: 15,
+    fontSize: 16,
+    fontWeight: "500",
+    //fontFamily: "Nunito",
+    color: "white",
+    textAlign: "justify",
+    width: 370,
+    height: 380,
+    //padding: 10,
+    textAlignVertical: "top",
+  },
+  clickToStart2: {
+    position: "absolute",
+    top: 750,
     left: 15,
     fontSize: 16,
     fontWeight: "500",
