@@ -28,4 +28,13 @@ yarn add react-native-screens<br>
 yarn add react-native-svg<br>
 npx expo install react-native-svg<br>
 yarn add react-native-event-listeners<br>
-npx expo install expo-image-picker
+npx expo install expo-image-picker<br>
+yarn add react-native-event-listeners<br>
+yarn add @react-native-community/async-storage<br>
+yarn add @react-native-async-storage/async-storage<br>
+yarn add randomcolor<br>
+yarn add @react-native-picker/picker<br>
+yarn add react-native-push-notification<br>
+yarn add axios<br>
+yarn add expo-permissions<br>
+yarn add expo-notifications<br>
