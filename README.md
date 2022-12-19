@@ -15,7 +15,8 @@ Fitur :
 2. Create/Delate/Edit note
 3. Search Note
 4. Change Background
-5. Push Notification
+5. Last Edit
+6. Share Note
 
 Package yang diperlukan : <br>
 yarn add @react-navigation/native<br>
