@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "DayListAI",
+    "slug": "DayListAI",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/iconremovebgpreview-11.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/iconsama.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.andika120140002.DayListAI"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fe099e93-8370-4927-85a4-9789d557aada"
+      }
+    }
+  }
+}
